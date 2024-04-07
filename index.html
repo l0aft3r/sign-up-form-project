@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="left">
+        <span class="shadow"></span>
+        <img class="image" src="pic.jpg" alt="">
+        <div class="odin-logo-holder">
+            <img src="odin-lined.png" alt="Logo of Odin">
+            <h1>ODIN</h1>
+        </div>
+        <span class="img-src">
+            Photo by <a href="https://unsplash.com/@nganduong93?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Duong Ngan</a> on <a href="https://unsplash.com/photos/a-pair-of-glasses-and-a-watch-on-a-table-t4syzXR6wJk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </span>
+    </div>
+    <div class="right">
+        <div>
+        <div id="header">
+            <h1>ODIN</h1>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br/><br/>Sign up <em>now</em> to get started.</p>
+        </div>
+        <div>
+            <form action="" id="form">
+                <p>Fields marked with <strong><span>*</span></strong> are required.</p>
+                <br>
+                <label for="name">Full Name: <strong><span>*</span></strong></label>
+                <input type="text" name="name" id="name" value="" required>
+                <label for="email">Email: <strong><span>*</span></strong></label>
+                <input type="email" name="email" id="email" value="" required>
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" name="phone-number" id="phone-number" value="">
+                <label for="password">Password: <strong><span>*</span></strong></label>
+                <input type="password" name="password" id="password" value="" required>
+                <label for="pass-confirm">Confirm Password: <strong><span>*</span></strong></label>
+                <input type="password" name="pass-confirm" id="pass-confirm" value="" required>
+                <button type="submit" id="btn">Create Account</button>
+            </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

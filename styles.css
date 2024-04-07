@@ -1,0 +1,210 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS reset */
+
+@font-face {
+    font-family: norse-bold;
+    src: url("fonts/Norse-Bold.otf");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: normal;
+    font-style: italic;
+    src: url("fonts/Inter-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/Inter-Regular.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    --my-hight: 100vh;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+p {
+    font-family: Inter;
+    padding:5px;
+    text-align: center;
+    font-style: italic;
+}
+
+label {
+    font-family: Inter;
+}
+
+div.left {
+    width: 50%;
+    position: relative;
+}
+
+div.right {
+    background-color: rgb(235, 209, 209);
+    width: 100%;
+    height: 100%;
+    line-height: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.2rem;
+}
+
+div.right>div {
+    width: max(40%, 400px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset -8px 0px 19px 0px rgba(0, 0, 0, 0.75);
+    bottom: 0px;
+}
+
+div.left .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.left div{
+    position: absolute;
+    top: 18%;
+    left: 0%;
+    width: 100%;
+    padding: max(2vh, 20px) 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-family: norse-bold;
+    font-size: 6rem;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    img {
+        height:max(15vh,100px);
+        flex: none;
+    }
+    h1 {
+        display: inline;
+        margin: 0;
+    }
+}
+
+div.left .img-src {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 0.5rem;
+    padding: 0.05rem;
+    border: 0;
+    border-bottom: 1px solid rgb(136, 43, 43);
+    background-color: rgb(255, 255, 255);
+}
+
+input:active, input:focus {
+    outline: none;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    h1 {
+        font-family: norse-bold;
+        font-size: 6rem;
+        height: 6rem;
+        margin-bottom: 0;
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+strong {
+    color: rgb(194, 0, 0);
+}
+
+#btn {
+    padding: 5px;
+    margin-top: 1rem;
+    background-color: rgb(233, 205, 205);
+    border: 1px solid rgb(221, 169, 169);
+    box-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 600px) {
+    div.left {
+        display: none;
+        width: 0px;
+      
+    }
+  }
